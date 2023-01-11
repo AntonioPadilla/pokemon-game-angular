@@ -20,7 +20,7 @@ export class GameComponent implements OnInit {
   get score(): number {
     return this.playerService.score;
   }
-  
+
   get hearts(): Array<any> {
     return Array(this.playerService.lifes);
   }
@@ -68,7 +68,7 @@ export class GameComponent implements OnInit {
       this.playerService.decreaseLifes();
       console.log('incorrect');
     }
-    
+
   }
 
   // this function es execute every time that user click in next game

@@ -8,7 +8,6 @@ import { GameoverComponent } from './pages/gameover/gameover.component';
 import { PokemonViewComponent } from './components/pokemon-view/pokemon-view.component';
 
 
-
 @NgModule({
   declarations: [
     GameComponent,

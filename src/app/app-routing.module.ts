@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
+import {IniciarSessioPadillaComponent} from "./iniciar-sessio-padilla/iniciar-sessio-padilla.component";
 
 const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
   },
+  {path: 'iniciarSessioPadilla', component:IniciarSessioPadillaComponent},
   {
     path: 'game',
     loadChildren: () => import('./game/game.module').then(m => m.GameModule)
